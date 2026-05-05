@@ -1,8 +1,9 @@
 # AI Pointillism Robot System
 
-## Overview
+## Overview  
 AI 이미지 처리 결과를 기반으로 협동로봇이 실제 펜으로 점묘화를 수행하는 자동화 시스템을 구현한다.  
 Web–Server–ROS–Robot 전체 파이프라인을 통합하여 물리적 드로잉 시스템을 구축한다. 
+
 ---
 
 ## My Role
