@@ -2,8 +2,7 @@
 
 ## Overview
 AI 이미지 처리 결과를 기반으로 협동로봇이 실제 펜으로 점묘화를 수행하는 자동화 시스템을 구현한다.  
-Web–Server–ROS–Robot 전체 파이프라인을 통합하여 물리적 드로잉 시스템을 구축한다. :contentReference[oaicite:0]{index=0}
-
+Web–Server–ROS–Robot 전체 파이프라인을 통합하여 물리적 드로잉 시스템을 구축한다. 
 ---
 
 ## My Role
@@ -59,14 +58,13 @@ Web–Server–ROS–Robot 전체 파이프라인을 통합하여 물리적 드�
 - HTML / CSS / JavaScript
 - Firebase
 - Ubuntu
-- GitHub :contentReference[oaicite:1]{index=1}
-
+- GitHub
 ---
 
 ## Results
 - 로봇 점묘화 자동화 시스템 구현
 - 작업 효율 약 90% 향상
-- 실시간 피드백 기반 안정적 시스템 구축 :contentReference[oaicite:2]{index=2}
+- 실시간 피드백 기반 안정적 시스템 구축
 
 ---
 
