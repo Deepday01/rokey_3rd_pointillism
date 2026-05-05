@@ -1,8 +1,8 @@
 # 🎨 Art Robot; Pointillism Drawing
 
-> **Team:** ROKEY_영차영차
-> **Name:** 문홍일_박지훈_이승민_이창석_최대혁
-> **Project Type:** Robotics + Computer Vision + Web
+> **Team:** ROKEY_영차영차   
+> **Name:** 문홍일_박지훈_이승민_이창석_최대혁  
+> **Project Type:** Robotics + Computer Vision + Web  
 > **Core:** “디지털 이미지를 물리적 점묘화로 변환하는 자동 드로잉 시스템”
 
 ---
