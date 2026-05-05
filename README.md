@@ -1,7 +1,8 @@
-# 🎨 Dot Drawing Robot (AI Stipple Drawing System)
+# 🎨 Art Robot; Pointillism Drawing
 
-> **Team:** F1
-> **Project Type:** Robotics + AI + Computer Vision
+> **Team:** ROKEY_영차영차
+> **Name:** 문홍일_박지훈_이승민_이창석_최대혁
+> **Project Type:** Robotics + Computer Vision + Web
 > **Core:** “디지털 이미지를 물리적 점묘화로 변환하는 자동 드로잉 시스템”
 
 ---
@@ -10,45 +11,39 @@
 
 ## 1-1. 프로젝트 정의
 
-AI 이미지 처리 기술과 협동 로봇을 활용하여
+이미지 처리 알고리즘과 협동 로봇을 활용하여
 **입력 이미지를 점묘화로 변환하고 실제 로봇이 물리적으로 드로잉하는 시스템을 구현한다.** 
 
 ## 1-2. 기획 배경
 
-* 디지털 이미지 과잉 환경 → 물리적 결과물에 대한 수요 존재
-* 점묘화는 반복 노동 중심 → 자동화 가치 높음
+* 생성형 디지털 이미지들의 범람  → 아날로그, 물리적 결과물에 대한 갈증
+* 특히 점묘화는 반복 노동 중심 → 자동화 가치 높음
 * 체험형 콘텐츠 및 커스텀 아트 시장 확대
+* 관광지 or 컨벤션 등에서 추억과 경험의 소재로 활용가능
 
 ## 1-3. 핵심 가치
 
+* 디지털에서 나오는 아날로그 감성 (실제 펜 드로잉)
+* 사용자 맞춤형 결과물 생성 (파라미터값 설정 가능)
 * 반복 작업 자동화 (효율성 향상)
-* 아날로그 감성 유지 (실제 펜 드로잉)
-* 사용자 맞춤형 결과물 생성
 
 ---
 
 # 2. 🧠 시스템 아키텍처
 
 ## 2-1. 전체 구조
+### 시스템 아키텍쳐
+<img width="1280" height="720" alt="슬라이드7" src="https://github.com/user-attachments/assets/afbb6460-1e8d-46ec-bb8f-7a2a649bc858" />
+### 노드 아키텍쳐
+<img width="1280" height="720" alt="슬라이드8" src="https://github.com/user-attachments/assets/506e1ec6-0034-4605-af04-22a1c7365b82" />
 
-```
-[Web/UI] → [Action Bridge] → [ROS2 Action Server]
-                         ↓
-                  [Workflow Node]
-                         ↓
-    ┌──────────────┬──────────────┬──────────────┐
-    │ Vision Node  │ Planner Node │ Robot Node   │
-    └──────────────┴──────────────┴──────────────┘
-                         ↓
-                  [Robot Controller]
-```
 
 ## 2-2. 핵심 특징
 
-### ● 중앙 집중형 구조
-
-* workflow node가 전체 상태 관리
-* 각 노드는 독립적 기능 수행 (Low Coupling)
+### ● 로봇 / 클라이언트 분리구조
+* 실시간 제어 시스템(로봇)과 사용자 인터페이스(UI)의 요구사항을 둘다 충족시키기 위함
+* 로봇: 안정성, 실시간성, 예외처리 중요
+* 클라이언트: 사용자 경험, 확장성, 접근성 중요
 
 ### ● Action 기반 비동기 처리
 
@@ -63,6 +58,7 @@ AI 이미지 처리 기술과 협동 로봇을 활용하여
 ---
 
 # 3. 🔄 전체 동작 흐름
+<img width="468" height="851" alt="image" src="https://github.com/user-attachments/assets/e8a742bd-a579-4325-a8c6-2442e1a9b3f7" />
 
 ## 3-1. End-to-End Flow
 
